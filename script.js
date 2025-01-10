@@ -144,3 +144,14 @@ projectTitle.innerText=`Websites`;
 })
 // get current year
 document.getElementById('current-year').textContent = `| ${new Date().getFullYear()} |`;
+
+
+// highlight text in new doc
+function highlightText() {
+  // Find the element by ID
+  var textElement = document.getElementById('highlight-text');
+  if (textElement) {
+    // Add a class or inline style to highlight it
+    textElement.style.backgroundColor = 'yellow'; // Example of highlight
+  }
+}
