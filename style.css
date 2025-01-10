@@ -714,6 +714,9 @@ form button {
     .project-categories {
         flex-direction: column;
     }
+    .project-tile{
+        width: 100%;
+    }
 
     .cont-1-left {
         width: 90%;
@@ -780,8 +783,11 @@ form button {
 .wrapper{
     max-width: 1080px;
     margin: 50px auto;
-    padding: 0 20px;
+    padding: 0px 20px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   .wrapper .center-line{
     position: absolute;
@@ -794,8 +800,8 @@ form button {
   }
   .wrapper .row{
     display: flex;
-  }
-  .wrapper .row-1{
+}
+.wrapper .row-1{
     justify-content: flex-start;
     position: relative;
     left: -2.5rem;
@@ -804,10 +810,11 @@ form button {
     left: 2.5rem;
     position: relative;
     justify-content: flex-end;
-  }
-  .wrapper .row section{
+}
+.wrapper .row section{
     background: #202020;
-    border-radius: 5px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgb(207 76 207);
     width: calc(50% - 40px);
     padding: 20px;
     position: relative;
@@ -892,6 +899,7 @@ form button {
     .wrapper .row{
       margin: 30px 0 3px 60px;
       position: static;
+      box-shadow: 0 0 10px rgb(207 76 207);
     }
     .wrapper .row section{
       width: 100%;
